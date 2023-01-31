@@ -208,7 +208,7 @@ function addIntern() {
                     if (email) {
                         return true;
                     } else {
-                        consolelog("Please enter an email.");
+                        console.log("Please enter an email.");
                         return false;
                     }
                 }
