@@ -9,7 +9,7 @@ const Intern = require("./lib/Intern");
 const Manager = require("./lib/manager");
 
 //output directory, path and file name
-const dist_dir = path.resolve(_dirname, "dist");
+const dist_dir = path.resolve(__dirname, "dist");
 const output = path.join(dist_dir, "index.html");
 
 //html template
@@ -21,7 +21,7 @@ const team = [];
 //function to choose next step 
 function menu() {
     inquirer
-        .promt([
+        .prompt([
             {
                 type: "list",
                 name: "role",

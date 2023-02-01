@@ -1,5 +1,3 @@
-const Employee = require("../lib/Employee");
-
 //create team cards 
 const teamHTML = (team) => {
 
@@ -7,8 +5,8 @@ const teamHTML = (team) => {
     const managerHTML =  (manager) => 
         `
         <div class="column is-one-third">
-            <div class="card employee-card">
-                <div class="card-header has-background-info has-text-white p-2 employee-header">
+            <div class="card">
+                <div class="card-header has-background-info has-text-white p-2">
                     <div class="media">
                         <div class="media-left">
                             <i class="material-icons md-48">star</i>
@@ -33,8 +31,8 @@ const teamHTML = (team) => {
     const engineerHTML =  (engineer) => 
         `
         <div class="column is-one-third">
-            <div class="card employee-card">
-                <div class="card-header has-background-info has-text-white p-2 employee-header">
+            <div class="card">
+                <div class="card-header has-background-info has-text-white p-2">
                     <div class="media">
                         <div class="media-left">
                             <i class="material-icons md-48">rocket</i>
@@ -60,8 +58,8 @@ const teamHTML = (team) => {
         const internHTML =  (intern) => 
         `
         <div class="column is-one-third">
-            <div class="card employee-card">
-                <div class="card-header has-background-info has-text-white p-2 employee-header">
+            <div class="card">
+                <div class="card-header has-background-info has-text-white p-2">
                     <div class="media">
                         <div class="media-left">
                             <i class="material-icons md-48">school</i>
