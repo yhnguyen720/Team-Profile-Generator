@@ -18,9 +18,9 @@ const teamHTML = (team) => {
                     </div>
                 </div>
                 <div class="card-content">
-                    <p>ID: ${manager.id}</p>
-                    <p>Email: <a href="mailto:${manager.email}">${manager.email}</p>
-                    <p>Office: ${manager.office}</p> 
+                        <p>ID: ${manager.id}</p><br>
+                        <p>Email: <a href="mailto:${manager.email}">${manager.email}</a></p><br>
+                        <p>Office: ${manager.office}</p>
                 </div>
             </div>
         </div>
@@ -44,10 +44,10 @@ const teamHTML = (team) => {
                     </div>
                 </div>
                 <div class="card-content">
-                    <p>ID: ${engineer.id}</p>
-                    <p>Email: <a href="mailto:${engineer.email}">${engineer.email}</p>
-                    <p>GitHub: <a href="https://github.com/${engineer.gitHub}" target="_blank"
-                    rel="noopener noreferrer">${engineer.github}</p> 
+                    <p>ID: ${engineer.id}</p><br>
+                    <p>Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p><br>
+                    <p>GitHub: <a href="https://github.com/${engineer.github}" target="_blank"
+                    rel="noopener noreferrer">${engineer.github}</a></p> 
                 </div>
             </div>
         </div>
@@ -71,8 +71,8 @@ const teamHTML = (team) => {
                     </div>
                 </div>
                 <div class="card-content">
-                    <p>Id: ${intern.id}</p>
-                    <p>Email: <a href="mailto:${intern.email}">${intern.email}</p>
+                    <p>Id: ${intern.id}</p><br>
+                    <p>Email: <a href="mailto:${intern.email}">${intern.email}</a></p><br>
                     <p>School: ${intern.school}</p> 
                 </div>
             </div>

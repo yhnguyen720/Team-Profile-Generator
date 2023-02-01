@@ -24,15 +24,15 @@ function menu() {
         .prompt([
             {
                 type: "list",
-                name: "role",
+                name: "next",
                 messages: "Would you like to add an engineer, intern or finish building team?",
                 choices: ["Engineer", "Intern", "Finish"]
             },
         ])
         .then((val) => {
-            if (val.role === "Engineer"){
+            if (val.next === "Engineer"){
                 addEngineer();
-            } else if (val.role === "Intern") {
+            } else if (val.next === "Intern") {
                 addIntern();
             } else {
                 createTeam();
@@ -228,7 +228,7 @@ function addIntern() {
             },
         ])
         .then((val) => {
-            const intern = new Intern(val.name, val.id, val.edmail, val.school);
+            const intern = new Intern(val.name, val.id, val.email, val.school);
             console.table(intern);
             team.push(intern);
             menu();
