@@ -4,9 +4,9 @@ const inquirer = require("inquirer");
 const path = require("path");
 
 //import classes
-const Engineer = require("./lib/Employee");
+const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
-const Manager = require("./lib/manager");
+const Manager = require("./lib/Manager");
 
 //output directory, path and file name
 const dist_dir = path.resolve(__dirname, "dist");

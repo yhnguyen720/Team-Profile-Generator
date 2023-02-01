@@ -18,9 +18,9 @@ const teamHTML = (team) => {
                     </div>
                 </div>
                 <div class="card-content">
-                    <p>ID Number: ${manager.id}</p>
-                    <p>Email Address: <a href="mailto:${manager.email}">${manager.email}</p>
-                    <p>Office Number: ${manager.office}</p> 
+                    <p>ID: ${manager.id}</p>
+                    <p>Email: <a href="mailto:${manager.email}">${manager.email}</p>
+                    <p>Office: ${manager.office}</p> 
                 </div>
             </div>
         </div>
@@ -44,8 +44,8 @@ const teamHTML = (team) => {
                     </div>
                 </div>
                 <div class="card-content">
-                    <p>ID Number: ${engineer.id}</p>
-                    <p>Email Address: <a href="mailto:${engineer.email}">${engineer.email}</p>
+                    <p>ID: ${engineer.id}</p>
+                    <p>Email: <a href="mailto:${engineer.email}">${engineer.email}</p>
                     <p>GitHub: <a href="https://github.com/${engineer.gitHub}" target="_blank"
                     rel="noopener noreferrer">${engineer.github}</p> 
                 </div>
@@ -71,8 +71,8 @@ const teamHTML = (team) => {
                     </div>
                 </div>
                 <div class="card-content">
-                    <p>Id Number: ${intern.id}</p>
-                    <p>Email Address: <a href="mailto:${intern.email}">${intern.email}</p>
+                    <p>Id: ${intern.id}</p>
+                    <p>Email: <a href="mailto:${intern.email}">${intern.email}</p>
                     <p>School: ${intern.school}</p> 
                 </div>
             </div>
@@ -97,10 +97,13 @@ const teamHTML = (team) => {
         );
 
         html.push(
-            team.filter((employee) => employee.getRole() === "Intern")
+            team
+            .filter((employee) => employee.getRole() === "Intern")
             .map((intern) => internHTML(intern))
             .join("")
         );
+
+        return html.join("");
 }
 
 
