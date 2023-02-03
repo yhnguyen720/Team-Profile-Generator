@@ -13,7 +13,9 @@
 ## Description
 
 ```md
-This command-line application takes in information about employees in a software engineering team then generates an HTML webpage that displays summaries for each person. The application uses Jest for running unit tests to ensure each part of the code passes. 
+This command-line application takes in information about employees in a software engineering team 
+then generates an HTML webpage that displays summaries for each person. The application uses Jest 
+for running unit tests to ensure each part of the code passes. 
 ```
 
 ## User Story
